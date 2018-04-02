@@ -19,7 +19,8 @@
   "scripts": {
     "build": "react-scripts build",
     "deploy": "gh-pages -b master -d build",
-    "eslint": "esw --color --watch src",
+    "eslint": "esw --color src",
+    "eslint:watch": "yarn eslint --watch",
     "predeploy": "npm run build",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
