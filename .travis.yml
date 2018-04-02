@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  yarn: true
+  directories:
+    - node_modules
+branches:
+  only:
+    - develop
+after_success:
+  - git config --global user.name "David Sorrentino"
+  - git config --global user.email "me@davidsorrentino.com"
+  - git remote rm origin
+  - git remote add origin https://dapids:${GITHUB_TOKEN}@github.com/dapids/dapids.github.io.git
+  - yarn run eslint
+  - yarn run deploy

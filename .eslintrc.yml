@@ -1,0 +1,40 @@
+env:
+  browser: true
+  es6: true
+  jasmine: true
+extends:
+  - airbnb
+  - react-app
+globals:
+  jest: false
+  "$Keys": false
+parser: babel-eslint
+parserOptions:
+  sourceType: module
+rules:
+  max-len:
+    - error
+    - code: 120
+      ignoreComments: true
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  react/jsx-filename-extension:
+    - error
+    - extensions:
+      - ".js"
+  semi:
+    - error
+    - never
+settings:
+  import/resolver:
+    node:
+      moduleDirectory:
+        - node_modules
+        - src
