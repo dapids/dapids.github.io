@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Bar, { BarItem } from 'UI/atoms/Bar'
+import Bar, { BarItem } from 'ui/atoms/Bar'
 
 const links = [{
   icon: 'fab fa-github',
@@ -18,8 +18,8 @@ const links = [{
 
 const Header = ({ theme }) => (
   <Bar
-    background={theme.accentLight}
-    color={theme.primary}
+    background={theme.palette.accent}
+    color={theme.text.primary}
   >
     {links.map(({ icon, text, url }) => (
       <BarItem icon={icon} key={url} url={url}>{text}</BarItem>

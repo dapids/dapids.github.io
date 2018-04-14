@@ -58,6 +58,6 @@ Section.propTypes = {
   color: PropTypes.string.isRequired,
 }
 
-export { default as SectionBody } from 'UI/atoms/Section/Body'
+export { default as SectionBody } from 'ui/atoms/Section/Body'
 
 export default Section

@@ -52,7 +52,7 @@ const Coin = Styled.div`
 `
 
 const Back = Coin.extend`
-  background: ${({ theme }) => theme.accentLight};
+  background: ${({ theme }) => theme.palette.white};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,13 +61,13 @@ const Back = Coin.extend`
 `
 
 const BackTitle = Styled.h1`
-  color: ${({ theme }) => theme.primaryLight};
+  color: ${({ theme }) => theme.text.primary};
   font-size: 18px;
   margin: 0;
 `
 
 const BackSubtitle = Styled.h2`
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.text.gray};
   font-size: 16px;
   margin: 0;
 `

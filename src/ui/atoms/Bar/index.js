@@ -34,6 +34,6 @@ Bar.propTypes = {
   color: PropTypes.string.isRequired,
 }
 
-export { default as BarItem } from 'UI/atoms/Bar/Item'
+export { default as BarItem } from 'ui/atoms/Bar/Item'
 
 export default Bar
