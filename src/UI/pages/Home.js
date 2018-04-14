@@ -1,13 +1,13 @@
 import React from 'react'
-import Styled from 'styled-components'
-import { palette } from 'constants/palette'
+import PropTypes from 'prop-types'
+import Styled, { withTheme } from 'styled-components'
 import Section, { SectionBody } from 'UI/atoms/Section'
 import Header from 'UI/molecules/Header'
 import Footer from 'UI/molecules/Footer'
 import Picture from 'UI/molecules/Picture'
 
 const Page = Styled.div`
-  background: ${palette.white};
+  background: ${({ theme }) => theme.accentLight};
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -23,16 +23,16 @@ const Content = Styled.div`
   }
 `
 
-const Home = () => (
+const Home = ({ theme }) => (
   <Page>
-    <Header />
+    <Header theme={theme} />
 
     <Content>
       <Picture />
 
       <Section
-        background={palette.darkGray}
-        color={palette.white}
+        background={theme.primaryLight}
+        color={theme.accentLight}
       >
         <SectionBody title="Languages">
           ES6 JavaScript, TypeScript, Python, PHP, OCaml/Haskel, SQL.
@@ -40,8 +40,8 @@ const Home = () => (
       </Section>
 
       <Section
-        background={palette.lightGray}
-        color={palette.black}
+        background={theme.accent}
+        color={theme.primary}
       >
         <SectionBody title="Technologies">
           React / React Native, Redux, Immutable, Jest, Webpack, Node.js.
@@ -49,8 +49,12 @@ const Home = () => (
       </Section>
     </Content>
 
-    <Footer />
+    <Footer theme={theme} />
   </Page>
 )
 
-export default Home
+Home.propTypes = {
+  theme: PropTypes.shape().isRequired,
+}
+
+export default withTheme(Home)
