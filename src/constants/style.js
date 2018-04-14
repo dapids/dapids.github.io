@@ -1,17 +1,32 @@
 export const theme = {
   dark: {
-    primary: '#111111',
-    primaryLight: '#222222',
-    secondary: '#bcbcbc',
-    accent: '#eeeeee',
-    accentLight: '#fefefe',
+    palette: {
+      accent: '#fefefe',
+      accentAlternative: '#eeeeee',
+      primary: '#111111',
+      secondary: '#222222',
+      white: '#fefefe',
+    },
+    text: {
+      accent: '#fefefe',
+      gray: '#bcbcbc',
+      primary: '#111111',
+    },
   },
   light: {
-    primary: '#111111',
-    primaryLight: '#222222',
-    secondary: '#bcbcbc',
-    accent: '#eeeeee',
-    accentLight: '#fefefe',
+    palette: {
+      accent: '#c5d5cb',
+      accentAlternative: '#e3e0cf',
+      divider: '#fefefe',
+      primary: '#3b3a36',
+      secondary: '#9fa8a3',
+      white: '#fefefe',
+    },
+    text: {
+      accent: '#fefefe',
+      gray: '#bcbcbc',
+      primary: '#111111',
+    },
   },
 }
 

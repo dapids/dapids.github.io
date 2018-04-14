@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Styled, { withTheme } from 'styled-components'
-import Section, { SectionBody } from 'UI/atoms/Section'
-import Header from 'UI/molecules/Header'
-import Footer from 'UI/molecules/Footer'
-import Picture from 'UI/molecules/Picture'
+import Section, { SectionBody } from 'ui/atoms/Section'
+import Header from 'ui/molecules/Header'
+import Footer from 'ui/molecules/Footer'
+import Picture from 'ui/molecules/Picture'
+import Switch from 'ui/molecules/Switch'
 
 const Page = Styled.div`
-  background: ${({ theme }) => theme.accentLight};
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -28,11 +28,13 @@ const Home = ({ theme }) => (
     <Header theme={theme} />
 
     <Content>
+      <Switch />
+
       <Picture />
 
       <Section
-        background={theme.primaryLight}
-        color={theme.accentLight}
+        background={theme.palette.secondary}
+        color={theme.text.accent}
       >
         <SectionBody title="Languages">
           ES6 JavaScript, TypeScript, Python, PHP, OCaml/Haskel, SQL.
@@ -40,8 +42,8 @@ const Home = ({ theme }) => (
       </Section>
 
       <Section
-        background={theme.accent}
-        color={theme.primary}
+        background={theme.palette.accentAlternative}
+        color={theme.text.primary}
       >
         <SectionBody title="Technologies">
           React / React Native, Redux, Immutable, Jest, Webpack, Node.js.

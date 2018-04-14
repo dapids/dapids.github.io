@@ -8,7 +8,7 @@ const Box = Styled.div`
   flex: 1 1 auto;
   flex-direction: column;
   justify-content: center;
-  padding: 24px;s
+  padding: 16px;
 `
 
 const Text = Styled.div`
