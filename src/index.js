@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import registerServiceWorker from 'registerServiceWorker'
-import Home from 'UI/pages/Home'
+import App from 'App'
 
-ReactDOM.render(<Home />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
 registerServiceWorker()

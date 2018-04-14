@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Styled from 'styled-components'
-import { palette } from 'constants/palette'
 import me from 'assets/me.jpg'
 
 const Container = Styled.div`
@@ -53,7 +52,7 @@ const Coin = Styled.div`
 `
 
 const Back = Coin.extend`
-  background: ${palette.white};
+  background: ${({ theme }) => theme.accentLight};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,13 +61,13 @@ const Back = Coin.extend`
 `
 
 const BackTitle = Styled.h1`
-  color: ${palette.darkGray};
+  color: ${({ theme }) => theme.primaryLight};
   font-size: 18px;
   margin: 0;
 `
 
 const BackSubtitle = Styled.h2`
-  color: ${palette.gray};
+  color: ${({ theme }) => theme.secondary};
   font-size: 16px;
   margin: 0;
 `

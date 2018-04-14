@@ -1,6 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Bar, { BarItem } from 'UI/atoms/Bar'
-import { palette } from 'constants/palette'
 
 const links = [{
   icon: 'fab fa-github',
@@ -16,15 +16,19 @@ const links = [{
   url: '//twitter.com/dapidsorrentino',
 }]
 
-const Header = () => (
+const Header = ({ theme }) => (
   <Bar
-    background={palette.white}
-    color={palette.black}
+    background={theme.accentLight}
+    color={theme.primary}
   >
     {links.map(({ icon, text, url }) => (
       <BarItem icon={icon} key={url} url={url}>{text}</BarItem>
     ))}
   </Bar>
 )
+
+Header.propTypes = {
+  theme: PropTypes.shape().isRequired,
+}
 
 export default Header

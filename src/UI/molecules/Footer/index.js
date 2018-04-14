@@ -1,6 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Bar, { BarItem } from 'UI/atoms/Bar'
-import { palette } from 'constants/palette'
 
 const links = [{
   icon: 'fas fa-map-marker-alt',
@@ -16,15 +16,19 @@ const links = [{
   url: 'tel:3333253433',
 }]
 
-const Footer = () => (
+const Footer = ({ theme }) => (
   <Bar
-    background={palette.black}
-    color={palette.white}
+    background={theme.primary}
+    color={theme.accentLight}
   >
     {links.map(({ icon, text, url }) => (
       <BarItem icon={icon} key={url} url={url}>{text}</BarItem>
     ))}
   </Bar>
 )
+
+Footer.propTypes = {
+  theme: PropTypes.shape().isRequired,
+}
 
 export default Footer
