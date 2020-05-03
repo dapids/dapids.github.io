@@ -3,7 +3,9 @@ import { GlobalStyle } from 'components/GlobalStyle'
 import { About } from 'components/sections/About'
 import { Contact } from 'components/sections/Contact'
 import { Hero } from 'components/sections/Hero'
+import { Footer } from 'components/sections/Footer'
 import { Work } from 'components/sections/Work'
+import { ToTop } from 'components/ToTop'
 
 const Index = () => (
   <>
@@ -11,15 +13,15 @@ const Index = () => (
 
     <Hero />
 
-    <div>
-      Website under construction. Please 🐻 with me.
-    </div>
-
     <About />
 
     <Work />
 
     <Contact />
+
+    <Footer />
+
+    <ToTop href="#hero" />
   </>
 )
 

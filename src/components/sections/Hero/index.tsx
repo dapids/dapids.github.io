@@ -17,11 +17,11 @@ const ScrollWrapper = styled.div`
 `
 
 const Hero = () => (
-  <Skin>
+  <Skin id="hero">
     <Menu />
 
     <ScrollWrapper>
-      <Scroll href="#" />
+      <Scroll href="#about" />
     </ScrollWrapper>
   </Skin>
 )

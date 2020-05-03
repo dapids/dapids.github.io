@@ -8,6 +8,7 @@ const Skin = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
+  position: sticky;
 `
 
 const Items = styled.div`
@@ -48,15 +49,15 @@ const Home = styled.a`
 
 const items = [
   {
-    anchor: '#',
+    anchor: '#about',
     text: 'About'
   },
   {
-    anchor: '#',
+    anchor: '#work',
     text: 'Work'
   },
   {
-    anchor: '#',
+    anchor: '#contact',
     text: 'Contact'
   },
 ]
@@ -64,11 +65,11 @@ const items = [
 const Menu = () => (
   <Content>
     <Skin>
-      <Home href="#">Dapids</Home>
+      <Home href="#hero">Dapids</Home>
 
       <Items>
         { items.map(({ anchor, text }) => (
-          <Item href={anchor}>{ text }</Item>
+          <Item href={anchor} key={anchor} >{ text }</Item>
         )) }
       </Items>
     </Skin>

@@ -2,13 +2,17 @@ import styled, { keyframes } from 'styled-components'
 import { palette } from 'ui/tokens/palette'
 
 const move = keyframes`
-  from {
+  0% {
     opacity: 1;
     transform: translate(-50%, -200%);
   }
 
-  to {
-    opacity: .2;
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
     transform: translate(-50%, 100%);
   }
 `
@@ -24,7 +28,7 @@ const Scroll = styled.a`
   width: 24px;
 
   :after {
-    animation: ${move} 1.8s infinite ease-in-out;
+    animation: ${move} 1.6s infinite linear;
     background-color: ${palette.whiteDark};
     border-radius: 50%;
     content: '';
