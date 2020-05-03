@@ -1,10 +1,8 @@
 import React from 'react'
-import { Content } from 'ui/atoms/Content'
+import { Section } from 'ui/atoms/Section'
 
 const Work = () => (
-  <Content>
-    <h2 id="work">Work</h2>
-
+  <Section background="gray" id="work" title="Work">
     <div>
       Website under construction. Please 🐻 with me.
     </div>
@@ -39,7 +37,7 @@ const Work = () => (
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptatem amet reiciendis nisi id odio facilis repellendus, ducimus consequuntur hic eius dolor placeat, veritatis, illo aut incidunt vero aspernatur. Numquam.
     </p>
-  </Content>
+  </Section>
 )
 
 export { Work }

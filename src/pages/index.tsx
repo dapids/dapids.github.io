@@ -5,11 +5,14 @@ import { Contact } from 'components/sections/Contact'
 import { Hero } from 'components/sections/Hero'
 import { Footer } from 'components/sections/Footer'
 import { Work } from 'components/sections/Work'
+import { Menu } from 'components/Menu'
 import { ToTop } from 'components/ToTop'
 
 const Index = () => (
   <>
     <GlobalStyle />
+
+    <Menu />
 
     <Hero />
 

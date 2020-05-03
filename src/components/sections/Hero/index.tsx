@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Menu } from 'components/sections/Hero/Menu'
 import { Scroll } from 'components/sections/Hero/Scroll'
 
 const Skin = styled.div`
@@ -9,7 +8,7 @@ const Skin = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-between;
+  justify-content: flex-end;
 `
 
 const ScrollWrapper = styled.div`
@@ -18,8 +17,6 @@ const ScrollWrapper = styled.div`
 
 const Hero = () => (
   <Skin id="hero">
-    <Menu />
-
     <ScrollWrapper>
       <Scroll href="#about" />
     </ScrollWrapper>
