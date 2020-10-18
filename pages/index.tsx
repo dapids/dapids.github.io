@@ -1,19 +1,30 @@
-import Head from 'next/head'
-import { GlobalStyle } from '../components/GlobalStyle'
+import { GlobalStyle } from 'components/GlobalStyle'
+import { Head } from 'components/Head'
+import { Header } from 'components/Header'
+import styled from 'styled-components'
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  }
+}
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 16px;
+`
 
 export default function Home() {
   return (
-    <>
+    <Container>
       <GlobalStyle />
-      <Head>
-        <title>David Sorrentino - Frontend Architect</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
-      <div>Work in progress.</div>
-    </>
+
+      <Head />
+
+      <Header />
+
+      <div style={{ fontSize: '20px', textAlign: 'center' }}>Work in progress</div>
+    </Container>
   )
 }
