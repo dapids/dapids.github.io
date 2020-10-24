@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 type Props = {
-  bold?: boolean
+  weight?: '300' | '400' | '500'
 }
 
 export const Body = styled.div<Props>`
   font-size: 1.6rem;
-  font-weight: ${({ bold }) => (bold ? '500' : '300')};
+  font-weight: ${({ weight }) => (weight ? weight : '300')};
 `

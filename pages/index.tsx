@@ -1,6 +1,7 @@
 import { GlobalStyle } from 'components/GlobalStyle'
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
+import { AboutMe } from 'components/Sections/AboutMe'
 import styled from 'styled-components'
 
 export async function getStaticProps() {
@@ -24,7 +25,7 @@ export default function Home() {
 
       <Header />
 
-      <div style={{ fontSize: '20px', textAlign: 'center' }}>Work in progress</div>
+      <AboutMe />
     </Container>
   )
 }

@@ -2,9 +2,9 @@ import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@forta
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Flex } from 'components/Flex'
 import { Link } from 'components/Link'
-import { Body } from 'components/typography/Body'
-import { Display } from 'components/typography/Display'
-import { HeadingSmall } from 'components/typography/HeadingSmall'
+import { Body } from 'components/Typography/Body'
+import { Display } from 'components/Typography/Display'
+import { HeadingSmall } from 'components/Typography/HeadingSmall'
 import { useViewportSize } from 'components/useViewportSize'
 import styled from 'styled-components'
 
@@ -51,25 +51,25 @@ export const Header = () => {
       <Flex align={rightAlign}>
         <IconsContainer direction="row">
           <IconLink href="//github.com/dapids" target="_blank">
-            <Icon icon={faGithub} />
+            <Icon icon={faGithub} size="3x" />
           </IconLink>
           <IconLink href="//facebook.com/dapids" target="_blank">
-            <Icon icon={faFacebook} />
+            <Icon icon={faFacebook} size="3x" />
           </IconLink>
           <IconLink href="//instagram.com/dapids17" target="_blank">
-            <Icon icon={faInstagram} />
+            <Icon icon={faInstagram} size="3x" />
           </IconLink>
           <IconLink href="//linkedin.com/in/dapids" target="_blank">
-            <Icon icon={faLinkedin} />
+            <Icon icon={faLinkedin} size="3x" />
           </IconLink>
           <IconLink href="//twitter.com/dapidsorrentino" target="_blank">
-            <Icon icon={faTwitter} />
+            <Icon icon={faTwitter} size="3x" />
           </IconLink>
         </IconsContainer>
 
         <div>
           <Body as="span">Email:</Body>{' '}
-          <Body as="span" bold>
+          <Body as="span" weight="500">
             <Link href="mailto:me@davidsorrentino.com">me@davidsorrentino.com</Link>
           </Body>
         </div>
@@ -77,8 +77,9 @@ export const Header = () => {
         <Body>Location: Rome - Italy</Body>
 
         <div>
-          <Body as="span">Company:</Body>{' '}
-          <Body as="span" bold>
+          <Body as="span">Company:</Body>
+          {' '}
+          <Body as="span" weight="500">
             <Link href="//www.prontopro.it" target="_blank">
               ProntoPro
             </Link>
