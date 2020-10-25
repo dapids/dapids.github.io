@@ -53,6 +53,9 @@ export const AboutMe = () => {
           <Paragraph>
             In my life I had the chance to live in the following towns and I feel so lucky about it: Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱, Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
           </Paragraph>
+          <Paragraph>
+            In 2019 I married Laura, a very special Roman woman.
+          </Paragraph>
         </Flex>
       </Flex>
     </>

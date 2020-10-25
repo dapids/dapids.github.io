@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const Heading = styled(HeadingBase)`
   margin-bottom: 48px;
+  margin-top: 16px;
   padding-bottom: 12px;
   position: relative;
   text-align: center;
