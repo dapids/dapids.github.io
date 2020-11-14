@@ -1,6 +1,7 @@
 import { Flex } from 'components/Flex'
 import { SectionTitle } from 'components/SectionTitle'
 import { Body } from 'components/Typography/Body'
+import { Mark } from 'components/Typography/Mark'
 import { useViewportSize } from 'components/useViewportSize'
 import styled from 'styled-components'
 
@@ -45,13 +46,13 @@ export const AboutMe = () => {
             Hi! My name is David. 👋🏻
           </Paragraph>
           <Paragraph>
-            I'm a Frontend Architect and a Software Development enthusiast.
+            I'm a <Mark>Frontend Architect</Mark> and a Software Development enthusiast.
           </Paragraph>
           <Paragraph>
-            At the moment, I'm mainly working with: TypeScript, React, React Native, Redux, Reselect, Immutable.js, Next.js, Node.js, Jest, Webpack.
+            At the moment, I'm mainly working with: <Mark>TypeScript</Mark>, <Mark>React</Mark>, React Native, Redux, Reselect, Immutable.js, <Mark>Next.js</Mark>, Node.js, Jest, Webpack.
           </Paragraph>
           <Paragraph>
-            In my life I had the chance to live in the following towns and I feel so lucky about it: Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱, Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
+            In my life I had the chance to live in the following towns and I feel so lucky about it: Angri 🇮🇹, Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱, Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
           </Paragraph>
           <Paragraph>
             In 2019 I married Laura, a very special Roman woman.

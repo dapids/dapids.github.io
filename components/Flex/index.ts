@@ -7,7 +7,7 @@ type Props = {
   grow?: '0' | '1'
   justify?: 'center' | 'flex-end' | 'flex-start' | 'space-between'
   shrink?: '0' | '1'
-  wrap?: 'nowrap'
+  wrap?: 'nowrap' | 'wrap'
 }
 
 export const Flex = styled.div<Props>`

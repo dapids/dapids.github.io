@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   border-top: 2px dashed #e6e6e6;
-  margin-top: 48px;
   padding-top: 16px;
   text-align: center;
 `
