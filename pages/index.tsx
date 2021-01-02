@@ -5,6 +5,7 @@ import { Header } from 'components/Header'
 import { AboutMe } from 'components/Sections/AboutMe'
 import { Education } from 'components/Sections/Education'
 import { Experience } from 'components/Sections/Experience'
+import { Talks } from 'components/Sections/Talks'
 import styled from 'styled-components'
 
 export async function getStaticProps() {
@@ -33,6 +34,8 @@ export default function Home() {
       <Experience />
 
       <Education />
+
+      <Talks />
 
       <Footer />
     </Container>

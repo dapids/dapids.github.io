@@ -27,7 +27,7 @@ const Picture = styled.div`
 const Paragraph = styled(Body).attrs({
   weight: '400',
 })`
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 `
 
 export const AboutMe = () => {
@@ -42,21 +42,20 @@ export const AboutMe = () => {
           <Picture />
         </PictureWrapper>
         <Flex grow="1" shrink="1">
-          <Paragraph>
-            Hi! My name is David. 👋🏻
-          </Paragraph>
+          <Paragraph>Hi! My name is David. 👋🏻</Paragraph>
           <Paragraph>
             I'm a <Mark>Frontend Architect</Mark> and a Software Development enthusiast.
           </Paragraph>
           <Paragraph>
-            At the moment, I'm mainly working with: <Mark>TypeScript</Mark>, <Mark>React</Mark>, React Native, Redux, Reselect, Immutable.js, <Mark>Next.js</Mark>, Node.js, Jest, Webpack.
+            At the moment, I'm mainly working with: <Mark>TypeScript</Mark>, <Mark>React</Mark>, React Native, Redux,
+            Reselect, Immutable.js, <Mark>Next.js</Mark>, Node.js, Jest, Webpack.
           </Paragraph>
           <Paragraph>
-            In my life I had the chance to live in the following towns and I feel so lucky about it: Angri 🇮🇹, Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱, Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
+            In my life I had the chance to live in the following towns - in the following order - and I feel so lucky
+            about it: Angri 🇮🇹, Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱,
+            Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
           </Paragraph>
-          <Paragraph>
-            In 2019 I married Laura, a very special Roman woman.
-          </Paragraph>
+          <Paragraph>In 2019 I married Laura, a very special Roman woman. 💍</Paragraph>
         </Flex>
       </Flex>
     </>
