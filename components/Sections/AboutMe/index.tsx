@@ -1,4 +1,5 @@
 import { Flex } from 'components/Flex'
+import { Link } from 'components/Link'
 import { SectionTitle } from 'components/SectionTitle'
 import { Body } from 'components/Typography/Body'
 import { Mark } from 'components/Typography/Mark'
@@ -30,6 +31,8 @@ const Paragraph = styled(Body).attrs({
   margin-bottom: 8px;
 `
 
+const yearsOfExperience = new Date().getFullYear() - 2006
+
 export const AboutMe = () => {
   const viewportSize = useViewportSize()
   const direction = viewportSize === 'small' ? 'column' : 'row'
@@ -44,7 +47,8 @@ export const AboutMe = () => {
         <Flex grow="1" shrink="1">
           <Paragraph>Hi! My name is David. 👋🏻</Paragraph>
           <Paragraph>
-            I'm a <Mark>Frontend Architect</Mark> and a Software Development enthusiast.
+            I'm a <Mark>Frontend Architect</Mark> and a Software Development enthusiast with{' '}
+            <Mark>{yearsOfExperience} years of experience</Mark> in the field.
           </Paragraph>
           <Paragraph>
             At the moment, I'm mainly working with: <Mark>TypeScript</Mark>, <Mark>React</Mark>, React Native, Redux,
@@ -55,7 +59,13 @@ export const AboutMe = () => {
             about it: Angri 🇮🇹, Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱,
             Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
           </Paragraph>
-          <Paragraph>In 2019 I married Laura, a very special Roman woman. 💍</Paragraph>
+          <Paragraph>
+            In 2019 I married{' '}
+            <Link href="//www.linkedin.com/in/lauratota123/" rel="nofollow" style={{ fontWeight: 700 }} target="_blank">
+              Laura
+            </Link>
+            , a very special Roman woman. 💍
+          </Paragraph>
         </Flex>
       </Flex>
     </>

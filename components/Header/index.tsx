@@ -50,19 +50,19 @@ export const Header = () => {
 
       <Flex align={rightAlign}>
         <IconsContainer direction="row">
-          <IconLink href="//github.com/dapids" target="_blank">
+          <IconLink href="//github.com/dapids" rel="nofollow" target="_blank">
             <Icon icon={faGithub} size="3x" />
           </IconLink>
-          <IconLink href="//facebook.com/dapids" target="_blank">
+          <IconLink href="//facebook.com/dapids" rel="nofollow" target="_blank">
             <Icon icon={faFacebook} size="3x" />
           </IconLink>
-          <IconLink href="//instagram.com/dapids17" target="_blank">
+          <IconLink href="//instagram.com/dapids17" rel="nofollow" target="_blank">
             <Icon icon={faInstagram} size="3x" />
           </IconLink>
-          <IconLink href="//linkedin.com/in/dapids" target="_blank">
+          <IconLink href="//linkedin.com/in/dapids" rel="nofollow" target="_blank">
             <Icon icon={faLinkedin} size="3x" />
           </IconLink>
-          <IconLink href="//twitter.com/dapidsorrentino" target="_blank">
+          <IconLink href="//twitter.com/dapidsorrentino" rel="nofollow" target="_blank">
             <Icon icon={faTwitter} size="3x" />
           </IconLink>
         </IconsContainer>
@@ -77,8 +77,7 @@ export const Header = () => {
         <Body>Location: Rome - Italy</Body>
 
         <div>
-          <Body as="span">Company:</Body>
-          {' '}
+          <Body as="span">Company:</Body>{' '}
           <Body as="span" weight="500">
             <Link href="//www.prontopro.it" target="_blank">
               ProntoPro
