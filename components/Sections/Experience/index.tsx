@@ -1,4 +1,5 @@
-import { Block } from 'components/Sections/Block'
+import { List } from 'components/List'
+import { SectionBlock } from 'components/SectionBlock'
 import { SectionTitle } from 'components/SectionTitle'
 import styled from 'styled-components'
 
@@ -7,16 +8,16 @@ const Paragraph = styled.p`
   margin-top: ${({ first }: { first?: boolean }) => (first ? '0' : '16px')};
 `
 
-const List = styled.ul`
-  margin-bottom: 0;
-  margin-top: 6px;
-`
-
 export const Experience = () => (
   <>
     <SectionTitle>Experience</SectionTitle>
 
-    <Block company="ProntoPro" location="Milan, Italy" role="Tech Lead &amp; Frontend Lead" years="2017 – now">
+    <SectionBlock
+      primaryInformation="2017 – now"
+      secondaryInformation="Milan, Italy"
+      subtitle="ProntoPro"
+      title="Tech Lead &amp; Frontend Lead"
+    >
       <>
         <Paragraph first>
           Responsibilities:
@@ -38,19 +39,19 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
+    </SectionBlock>
 
-    <Block
-      company="The Hive CoWorking &amp; Incubator"
-      location="Ancona, Italy"
-      role="Software Consultant"
-      years="2015 - 2016"
+    <SectionBlock
+      primaryInformation="2015 - 2016"
+      secondaryInformation="Ancona, Italy"
+      subtitle="The Hive CoWorking &amp; Incubator"
+      title="Software Consultant"
     >
       <>
         <Paragraph first>
           Responsibilities:
           <List>
-            <li>Design and develop websites and web applications.</li>
+            <li>Design and develop websites and web applications</li>
             <li>Manage projects and teams with Scrum methodologies</li>
             <li>Hire and train</li>
           </List>
@@ -64,9 +65,14 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
+    </SectionBlock>
 
-    <Block company="ArToo Campus" location="Ancona, Italy" role="JavaScript Trainer" years="2015 - 2016">
+    <SectionBlock
+      primaryInformation="2015 - 2016"
+      secondaryInformation="Ancona, Italy"
+      subtitle="ArToo Campus"
+      title="JavaScript Trainer"
+    >
       <>
         <Paragraph first>
           Responsibilities:
@@ -85,9 +91,14 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
+    </SectionBlock>
 
-    <Block company="Sida Group Srl" location="Ancona, Italy" role="Software Consultant" years="2014 - 2016">
+    <SectionBlock
+      primaryInformation="2014 - 2016"
+      secondaryInformation="Ancona, Italy"
+      subtitle="Sida Group Srl"
+      title="Software Consultant"
+    >
       <>
         <Paragraph first>
           Responsibilities:
@@ -105,9 +116,14 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
+    </SectionBlock>
 
-    <Block company="WeBox Studio" location="Ancona, Italy" role="Tech Lead" years="2013 - 2016">
+    <SectionBlock
+      primaryInformation="2013 - 2016"
+      secondaryInformation="Ancona, Italy"
+      subtitle="WeBox Studio"
+      title="Tech Lead"
+    >
       <>
         <Paragraph first>
           Responsibilities:
@@ -126,9 +142,14 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
+    </SectionBlock>
 
-    <Block company="Coworkingness Consulting" location="Poznań, Poland" role="Web Engineer" years="2012 - 2014">
+    <SectionBlock
+      primaryInformation="2012 - 2014"
+      secondaryInformation="Poznań, Poland"
+      subtitle="Coworkingness Consulting"
+      title="Web Engineer"
+    >
       <>
         <Paragraph first>
           Responsibilities:
@@ -145,9 +166,14 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
+    </SectionBlock>
 
-    <Block company="CADIA" location="Reykjavik, Iceland" role="Software Engineer" years="2011 - 2012">
+    <SectionBlock
+      primaryInformation="2011 - 2012"
+      secondaryInformation="Reykjavik, Iceland"
+      subtitle="CADIA"
+      title="Software Engineer"
+    >
       <>
         <Paragraph first>
           Responsibilities:
@@ -162,9 +188,15 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
+    </SectionBlock>
 
-    <Block company="Computer Sistemi Group" location="Fano, Italy" role="Software Engineer" years="2008">
+    <SectionBlock
+      last
+      primaryInformation="2008"
+      secondaryInformation="Fano, Italy"
+      subtitle="Computer Sistemi Group"
+      title="Software Engineer"
+    >
       <>
         <Paragraph first>
           Responsibilities:
@@ -179,23 +211,6 @@ export const Experience = () => (
           </List>
         </Paragraph>
       </>
-    </Block>
-
-    <Block last location="Sant'Antonio Abate, Italy" role="Freelance Web Engineer" years="2003 - 2006">
-      <>
-        <Paragraph first>
-          Responsibilities:
-          <List>
-            <li>Design and develop websites</li>
-          </List>
-        </Paragraph>
-        <Paragraph>
-          Technology:
-          <List>
-            <li>JavaScript, PHP, MySQL, HTML, CSS</li>
-          </List>
-        </Paragraph>
-      </>
-    </Block>
+    </SectionBlock>
   </>
 )

@@ -74,10 +74,10 @@ export const Header = () => {
           </Body>
         </div>
 
-        <Body>Location: Rome - Italy</Body>
+        <Body>Current location: Rome - Italy</Body>
 
         <div>
-          <Body as="span">Company:</Body>{' '}
+          <Body as="span">Current company:</Body>{' '}
           <Body as="span" weight="500">
             <Link href="//www.prontopro.it" target="_blank">
               ProntoPro

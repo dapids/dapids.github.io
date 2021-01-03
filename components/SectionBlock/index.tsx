@@ -18,7 +18,7 @@ const Wrapper = styled(Body).attrs({
   position: relative;
 
   &::after {
-    border-bottom: 1px dashed #e6e6e6;
+    border-bottom: 1px dashed #aaa;
     bottom: 0;
     content: '';
     display: ${({ last }: WrapperProps) => (last ? 'none' : 'visible')};
@@ -39,14 +39,21 @@ const HeadingSmall = styled(HeadingSmallBase)`
 
 type Props = {
   children: ReactChild
-  company?: string
   last?: boolean
-  location: string
-  role: string
-  years: string
+  primaryInformation: string
+  secondaryInformation: string
+  subtitle: string
+  title: string
 }
 
-export const Block = ({ children, company, last = false, location, role, years }: Props) => {
+export const SectionBlock = ({
+  children,
+  last = false,
+  primaryInformation,
+  secondaryInformation,
+  subtitle,
+  title,
+}: Props) => {
   const viewportSize = useViewportSize()
   const wrap = viewportSize === 'small' ? 'wrap' : 'nowrap'
 
@@ -54,10 +61,10 @@ export const Block = ({ children, company, last = false, location, role, years }
     <Wrapper last={last}>
       <Flex direction="row" wrap={wrap}>
         <Information basis="360px" grow="0" shrink="0">
-          <HeadingSmall weight="500">{role}</HeadingSmall>
-          {company && <Body weight="500">{company}</Body>}
-          <Body>{years}</Body>
-          <Body>{location}</Body>
+          <HeadingSmall weight="500">{title}</HeadingSmall>
+          <Body weight="500">{subtitle}</Body>
+          <Body>{primaryInformation}</Body>
+          <Body>{secondaryInformation}</Body>
         </Information>
 
         <Flex grow="1" shrink="1">
