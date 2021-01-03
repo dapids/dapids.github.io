@@ -5,7 +5,7 @@ import { Link } from 'components/Link'
 import { Body } from 'components/Typography/Body'
 import { Display } from 'components/Typography/Display'
 import { HeadingSmall } from 'components/Typography/HeadingSmall'
-import { useViewportSize } from 'components/useViewportSize'
+import { useViewportSize } from 'hooks/useViewportSize'
 import styled from 'styled-components'
 
 const Container = styled(Flex)`
@@ -18,20 +18,26 @@ const IconsContainer = styled(Flex)`
 
 const IconLink = styled(Link)`
   align-items: center;
-  background-color: #e6e6e6;
+  border: 2px solid #e6e6e6;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 35px #e6e6e6;
+  background: #e6e6e6;
+  box-shadow: inset 0 0 0 0px #222;
+  color: #222;
   display: flex;
-  height: 50px;
+  height: 55px;
   justify-content: center;
-  line-height: 50px;
-  margin: 0 8px;
-  transition: color 0.3s;
-  width: 50px;
+  line-height: 55px;
+  margin: ${({ small }: { small: boolean }) => (small ? '0 8px' : '0 0 0 16px')};
+  transition: all 0.3s;
+  width: 55px;
+
+  &:hover {
+    box-shadow: inset 0 0 0 35px #222;
+    color: #e6e6e6;
+  }
 `
 
 const Icon = styled(FontAwesomeIcon)`
-  color: #222;
   height: 30px;
 `
 
@@ -50,19 +56,24 @@ export const Header = () => {
 
       <Flex align={rightAlign}>
         <IconsContainer direction="row">
-          <IconLink href="//github.com/dapids" rel="nofollow" target="_blank">
+          <IconLink href="//github.com/dapids" rel="nofollow" small={viewportSize === 'small'} target="_blank">
             <Icon icon={faGithub} size="3x" />
           </IconLink>
-          <IconLink href="//facebook.com/dapids" rel="nofollow" target="_blank">
+          <IconLink href="//facebook.com/dapids" rel="nofollow" small={viewportSize === 'small'} target="_blank">
             <Icon icon={faFacebook} size="3x" />
           </IconLink>
-          <IconLink href="//instagram.com/dapids17" rel="nofollow" target="_blank">
+          <IconLink href="//instagram.com/dapids17" rel="nofollow" small={viewportSize === 'small'} target="_blank">
             <Icon icon={faInstagram} size="3x" />
           </IconLink>
-          <IconLink href="//linkedin.com/in/dapids" rel="nofollow" target="_blank">
+          <IconLink href="//linkedin.com/in/dapids" rel="nofollow" small={viewportSize === 'small'} target="_blank">
             <Icon icon={faLinkedin} size="3x" />
           </IconLink>
-          <IconLink href="//twitter.com/dapidsorrentino" rel="nofollow" target="_blank">
+          <IconLink
+            href="//twitter.com/dapidsorrentino"
+            rel="nofollow"
+            small={viewportSize === 'small'}
+            target="_blank"
+          >
             <Icon icon={faTwitter} size="3x" />
           </IconLink>
         </IconsContainer>

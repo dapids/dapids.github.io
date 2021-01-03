@@ -3,7 +3,7 @@ import { Link } from 'components/Link'
 import { SectionTitle } from 'components/SectionTitle'
 import { Body } from 'components/Typography/Body'
 import { Mark } from 'components/Typography/Mark'
-import { useViewportSize } from 'components/useViewportSize'
+import { useViewportSize } from 'hooks/useViewportSize'
 import styled from 'styled-components'
 
 const PictureWrapper = styled(Flex).attrs({

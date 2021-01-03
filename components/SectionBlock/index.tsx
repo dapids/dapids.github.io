@@ -1,7 +1,7 @@
 import { Flex } from 'components/Flex'
 import { Body } from 'components/Typography/Body'
 import { HeadingSmall as HeadingSmallBase } from 'components/Typography/HeadingSmall'
-import { useViewportSize } from 'components/useViewportSize'
+import { useViewportSize } from 'hooks/useViewportSize'
 import { ReactChild } from 'react'
 import styled from 'styled-components'
 
