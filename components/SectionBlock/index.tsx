@@ -11,10 +11,10 @@ type WrapperProps = {
 
 const Wrapper = styled(Body).attrs({
   weight: '400',
-})`
-  margin-bottom: 32px;
+})<WrapperProps>`
+  margin-bottom: ${({ last }) => (last ? '0' : '32px')};
   margin-top: 0;
-  padding-bottom: ${({ last }: WrapperProps) => (last ? '16px' : '32px')};
+  padding-bottom: ${({ last }) => (last ? '16px' : '32px')};
   position: relative;
 
   &::after {

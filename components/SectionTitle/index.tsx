@@ -2,9 +2,12 @@ import { Heading as HeadingBase } from 'components/Typography/Heading'
 import styled from 'styled-components'
 import { makeKebabCase } from 'utils/makeKebabCase'
 
+const Anchor = styled.div`
+  padding-bottom: 38px;
+`
+
 const Heading = styled(HeadingBase)`
   margin-bottom: 48px;
-  margin-top: 32px;
   padding-bottom: 12px;
   padding-top: 12px;
   position: relative;
@@ -30,5 +33,8 @@ const Heading = styled(HeadingBase)`
 `
 
 export const SectionTitle = ({ children }: { children: string }) => (
-  <Heading id={makeKebabCase(children)}>{children}</Heading>
+  <>
+    <Anchor id={makeKebabCase(children)}></Anchor>
+    <Heading>{children}</Heading>
+  </>
 )

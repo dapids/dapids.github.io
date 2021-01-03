@@ -1,6 +1,7 @@
 import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Flex } from 'components/Flex'
+import { Menu } from 'components/Menu'
 import { Link } from 'components/Link'
 import { Body } from 'components/Typography/Body'
 import { Display } from 'components/Typography/Display'
