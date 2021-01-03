@@ -18,7 +18,7 @@ export const Education = () => (
 
     <SectionBlock
       primaryInformation="2010 – 2012"
-      secondaryInformation="Grade: 9 / 10"
+      secondaryInformation="Grade: 9/10"
       subtitle="Master's Degree in Computer Science"
       title="Háskólinn í Reykjavík"
     >
