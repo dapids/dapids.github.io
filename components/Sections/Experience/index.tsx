@@ -14,7 +14,7 @@ export const Experience = () => (
     <SectionTitle>Experience</SectionTitle>
 
     <SectionBlock
-      primaryInformation="2017 – now"
+      primaryInformation="2018 – now"
       secondaryInformation="Milan, Italy"
       subtitle="ProntoPro"
       title="Tech Lead"

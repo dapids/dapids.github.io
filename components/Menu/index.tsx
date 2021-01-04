@@ -88,9 +88,9 @@ export const Menu = () => {
           <Separator />
           <Link href="#experience">Experience</Link>
           <Separator />
-          <Link href="#education">Education</Link>
-          <Separator />
           <Link href="#talks">Talks</Link>
+          <Separator />
+          <Link href="#education">Education</Link>
         </Inner>
       </Container>
     </Wrapper>
