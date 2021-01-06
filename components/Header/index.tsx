@@ -9,7 +9,7 @@ import { useViewportSize } from 'hooks/useViewportSize'
 import styled from 'styled-components'
 
 const Container = styled(Flex)`
-  padding: 24px 0;
+  padding: 32px 0 24px;
 `
 
 const IconsContainer = styled(Flex)`

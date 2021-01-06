@@ -25,8 +25,6 @@ export default function Home() {
 
       <Menu />
 
-      <BackToTop />
-
       <Container>
         <Header />
 
@@ -40,6 +38,8 @@ export default function Home() {
 
         <Footer />
       </Container>
+
+      <BackToTop />
     </>
   )
 }

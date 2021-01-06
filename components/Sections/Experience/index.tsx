@@ -4,7 +4,7 @@ import { SectionTitle } from 'components/SectionTitle'
 import { Mark } from 'components/Typography/Mark'
 import styled from 'styled-components'
 
-const Paragraph = styled.p`
+const Paragraph = styled.div`
   margin-bottom: 0;
   margin-top: ${({ first }: { first?: boolean }) => (first ? '0' : '16px')};
 `

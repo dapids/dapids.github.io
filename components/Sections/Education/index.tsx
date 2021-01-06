@@ -6,12 +6,6 @@ import { Body } from 'components/Typography/Body'
 import { Mark } from 'components/Typography/Mark'
 import styled from 'styled-components'
 
-const Paragraph = styled(Body).attrs({
-  weight: '400',
-})`
-  margin-bottom: 32px;
-`
-
 export const Education = () => (
   <>
     <SectionTitle>Education</SectionTitle>
