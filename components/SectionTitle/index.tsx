@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { makeKebabCase } from 'utils/makeKebabCase'
 
 const Anchor = styled.div`
-  padding-bottom: 38px;
+  padding-bottom: 52px;
 `
 
 const Heading = styled(HeadingBase)`
