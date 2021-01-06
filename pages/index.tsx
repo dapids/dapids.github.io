@@ -1,3 +1,4 @@
+import { BackToTop } from 'components/BackToTop'
 import { Container } from 'components/Container'
 import { Footer } from 'components/Footer'
 import { GlobalStyle } from 'components/GlobalStyle'
@@ -23,6 +24,8 @@ export default function Home() {
       <Head />
 
       <Menu />
+
+      <BackToTop />
 
       <Container>
         <Header />
