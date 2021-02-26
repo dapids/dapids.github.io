@@ -2,7 +2,7 @@ import { Flex } from 'components/Flex'
 import { Body } from 'components/Typography/Body'
 import { HeadingSmall as HeadingSmallBase } from 'components/Typography/HeadingSmall'
 import { useViewportSize } from 'hooks/useViewportSize'
-import { ReactChild } from 'react'
+import { ReactChild, ReactNode } from 'react'
 import styled from 'styled-components'
 
 type WrapperProps = {
@@ -33,6 +33,14 @@ const Information = styled(Flex)`
   margin-bottom: 16px;
 `
 
+type DetailProps = {
+  small: boolean
+}
+
+const Detail = styled(Flex)<DetailProps>`
+  padding-left: ${({ small }) => small ? '0' : '48px'};
+`
+
 const HeadingSmall = styled(HeadingSmallBase)`
   margin-bottom: 0px;
 `
@@ -40,8 +48,8 @@ const HeadingSmall = styled(HeadingSmallBase)`
 type Props = {
   children: ReactChild
   last?: boolean
-  primaryInformation: string
-  secondaryInformation: string
+  primaryInformation: ReactNode
+  secondaryInformation: ReactNode
   subtitle: string
   title: string
 }
@@ -67,9 +75,9 @@ export const SectionBlock = ({
           <Body>{secondaryInformation}</Body>
         </Information>
 
-        <Flex grow="1" shrink="1">
+        <Detail grow="1" shrink="1" small={viewportSize === 'small'}>
           {children}
-        </Flex>
+        </Detail>
       </Flex>
     </Wrapper>
   )

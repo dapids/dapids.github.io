@@ -103,7 +103,7 @@ export const Menu = () => {
   const scrollPositionY = useScrollPositionY()
 
   useEffect(() => {
-    const sections = ['About me', 'Experience', 'Talks', 'Education']
+    const sections = ['About me', 'Experience', 'Education', 'Articles & talks']
       .map((label) => ({
         label,
         id: makeKebabCase(label),

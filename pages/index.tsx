@@ -8,7 +8,7 @@ import { Menu } from 'components/Menu'
 import { AboutMe } from 'components/Sections/AboutMe'
 import { Education } from 'components/Sections/Education'
 import { Experience } from 'components/Sections/Experience'
-import { Talks } from 'components/Sections/Talks'
+import { ArticlesAndTalks } from 'components/Sections/ArticlesAndTalks'
 
 export async function getStaticProps() {
   return {
@@ -32,9 +32,9 @@ export default function Home() {
 
         <Experience />
 
-        <Talks />
-
         <Education />
+
+        <ArticlesAndTalks />
 
         <Footer />
       </Container>
