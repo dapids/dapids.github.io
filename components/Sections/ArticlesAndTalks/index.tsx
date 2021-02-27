@@ -63,7 +63,7 @@ export const ArticlesAndTalks = () => (
     >
       <>
         <Paragraph>
-          An article about the launch of a new Growth framework for Software Engineers in ProntoPro.
+          In this article I share some details about the launch of a new Growth framework for Software Engineers in ProntoPro.
         </Paragraph>
 
         <Link href="https://prontopro.engineering/blog/software-engineer-growth-framework" target="_blank">
@@ -73,13 +73,12 @@ export const ArticlesAndTalks = () => (
     </SectionBlock>
 
     <SectionBlock
-      last
       primaryInformation={
         <span><Icon icon={faCalendarAlt} /> 17/06/2020</span>
       }
       secondaryInformation={
-        <Link href="https://youtu.be/bJujIiTK5PQ?t=579" target="_blank">
-          <Icon icon={faLink} /> Link to the video
+        <Link href="https://www.meetup.com/en-AU/RomaJS/events/271172942/" target="_blank">
+          <Icon icon={faLink} /> Link to the event
         </Link>
       }
       subtitle="RomaJS community"
@@ -88,7 +87,7 @@ export const ArticlesAndTalks = () => (
       <>
         <Paragraph>
           In this talk I explain how in ProntoPro we managed to have one codebase for multiple platforms and what are the advantages and disadvantages of setting up and maintaining such a solution.
-          The talk is in Italian, but <Link href="https://docs.google.com/presentation/d/185CijvlYu9Ia5ZT0pDnKhnzCQ96JS2zm3juGNYj2Qcw/" target="_blank">slides</Link> are in English.
+          The talk is in Italian. <Link href="https://docs.google.com/presentation/d/185CijvlYu9Ia5ZT0pDnKhnzCQ96JS2zm3juGNYj2Qcw/" target="_blank">Slides</Link> are in English.
         </Paragraph>
 
         <Video>
@@ -98,6 +97,37 @@ export const ArticlesAndTalks = () => (
             frameBorder="0"
             height="315"
             src="https://www.youtube.com/embed/bJujIiTK5PQ?start=579"
+            width="560"
+          ></iframe>
+        </Video>
+      </>
+    </SectionBlock>
+
+    <SectionBlock
+      last
+      primaryInformation={
+        <span><Icon icon={faCalendarAlt} /> 02/10/2018</span>
+      }
+      secondaryInformation={
+        <Link href="https://milano2018.intersection-conference.eu/react-ux-development" target="_blank">
+          <Icon icon={faLink} /> Link to the event
+        </Link>
+      }
+      subtitle="Intersection Conference"
+      title="React as a bridge between UX and development"
+    >
+      <>
+        <Paragraph>
+          Designers and developers tend to look at UI components with different eyes. In this talk I share the role React had in ProntoPro in aligning their points of view.
+        </Paragraph>
+
+        <Video>
+          <iframe
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            frameBorder="0"
+            height="315"
+            src="https://www.youtube.com/embed/J74_lvROKqc"
             width="560"
           ></iframe>
         </Video>

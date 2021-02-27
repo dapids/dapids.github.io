@@ -64,7 +64,7 @@ export const AboutMe = () => {
             <Link href="//www.linkedin.com/in/lauratota123/" rel="nofollow" style={{ fontWeight: 700 }} target="_blank">
               Laura
             </Link>
-            , a very special Roman woman. 💍
+            . 💍
           </Paragraph>
         </Flex>
       </Flex>
