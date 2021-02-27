@@ -9,10 +9,10 @@ type IconWrapperProps = {
 }
 
 const IconWrapper = styled.div<IconWrapperProps>`
-  bottom: 16px;
+  bottom: 8px;
   opacity: ${({ scrolled }) => (scrolled ? '1' : '0')};
   position: fixed;
-  right: 16px;
+  right: 8px;
   visibility: ${({ scrolled }) => (scrolled ? 'visible' : 'hidden')};
   transition: visibility 0.3s, opacity 0.3s;
   z-index: 10;
@@ -26,11 +26,11 @@ const IconLink = styled(Link)`
   box-shadow: inset 0 0 0 0px #222;
   color: #222;
   display: flex;
-  height: 55px;
+  height: 48px;
   justify-content: center;
-  line-height: 55px;
+  line-height: 48px;
   transition: all 0.3s;
-  width: 55px;
+  width: 48px;
 
   @media (hover: hover) {
     &:hover {

@@ -13,7 +13,7 @@ type WrapperProps = {
 }
 
 const Wrapper = styled.div<WrapperProps>`
-  background: ${({ scrolled }) => (scrolled ? '#e6e6e6' : '#222')};
+  background: ${({ scrolled }) => (scrolled ? 'rgba(230, 230, 230, 0.95)' : '#222')};
   left: 0;
   position: sticky;
   right: 0;

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   border-top: 2px dashed #e6e6e6;
   margin-top: 32px;
-  padding-top: 16px;
+  padding: 32px 48px 16px;
   text-align: center;
 `
 
