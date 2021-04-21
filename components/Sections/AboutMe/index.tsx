@@ -47,12 +47,10 @@ export const AboutMe = () => {
         <Flex grow="1" shrink="1">
           <Paragraph>Hi! My name is David. 👋🏻</Paragraph>
           <Paragraph>
-            I'm a <Mark>Frontend Architect</Mark> and a Software Development enthusiast with{' '}
-            <Mark>{yearsOfExperience} years of experience</Mark> in the field.
+            I'm a <Mark>Software Development</Mark> enthusiast with{' '}<Mark>{yearsOfExperience} years of experience</Mark> in the field and I'm especially passionate about TypeScript and Functional Programming.
           </Paragraph>
           <Paragraph>
-            At the moment, I'm mainly working with: <Mark>TypeScript</Mark>, <Mark>React</Mark>, React Native, Redux,
-            Reselect, Immutable.js, <Mark>Next.js</Mark>, Node.js, Jest, Webpack.
+            I'm currently leading the super-talented Software Engineering team @ ProntoPro, building the best service marketplace in Europe.
           </Paragraph>
           <Paragraph>
             In my life I had the chance to live in the following towns - in the following order - and I feel so lucky
@@ -60,11 +58,13 @@ export const AboutMe = () => {
             Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
           </Paragraph>
           <Paragraph>
-            In 2019 I married{' '}
+            Married with
+            {' '}
             <Link href="//www.linkedin.com/in/lauratota123/" rel="nofollow" style={{ fontWeight: 700 }} target="_blank">
               Laura
             </Link>
-            . 💍
+            {' '}
+            since 2019. 💍
           </Paragraph>
         </Flex>
       </Flex>
