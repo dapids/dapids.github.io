@@ -14,8 +14,37 @@ export const Experience = () => (
     <SectionTitle>Experience</SectionTitle>
 
     <SectionBlock
-      primaryInformation="2018 – now"
-      secondaryInformation="Milan, Italy"
+      primaryInformation="2021 - now"
+      secondaryInformation="Rome, Italy"
+      subtitle="ProntoPro"
+      title="Head of Software Engineering"
+    >
+      <>
+        <Paragraph first>
+          Responsibilities:
+          <List>
+            <li>Shaping technology strategy</li>
+            <li>
+              <Mark>Attracting and mentoring talented Software Engineers</Mark>
+            </li>
+            <li>Supervise architectural decisions</li>
+            <li>Improve and innovate the product development workflow</li>
+          </List>
+        </Paragraph>
+        <Paragraph>
+          Technology:
+          <List>
+            <li>React, Next.js, NodeJS, ExpressJS, Symfony</li>
+            <li>Docker, Kubernetes, Helm</li>
+            <li>TypeScript, PHP, Go</li>
+          </List>
+        </Paragraph>
+      </>
+    </SectionBlock>
+
+    <SectionBlock
+      primaryInformation="2018 – 2021"
+      secondaryInformation="Rome, Italy"
       subtitle="ProntoPro"
       title="Tech Lead"
     >
@@ -26,24 +55,24 @@ export const Experience = () => (
             <li>
               <Mark>Foster team success and growth</Mark>
             </li>
-            <li>Supervise architectural decisions</li>
-            <li>Defend and enhance the product workflow</li>
+            <li>Supervise the Squad's architectural decisions</li>
+            <li>Defend and enhance the Squad's product development workflow</li>
             <li>Design and develop product features for web and native applications</li>
           </List>
         </Paragraph>
         <Paragraph>
           Technology:
           <List>
-            <li>React</li>
-            <li>Next.js, NodeJS, ExpressJS, Symfony, Twig</li>
-            <li>JavaScript, TypeScript, PHP, HTML, CSS/SASS</li>
+            <li>React, Next.js, NodeJS, ExpressJS, Symfony, Twig</li>
+            <li>Docker, Kubernetes, Helm</li>
+            <li>TypeScript, PHP, HTML, CSS/SASS</li>
           </List>
         </Paragraph>
       </>
     </SectionBlock>
 
     <SectionBlock
-      primaryInformation="2017 – now"
+      primaryInformation="2017 – 2021"
       secondaryInformation="Milan, Italy"
       subtitle="ProntoPro"
       title="Frontend Lead"
@@ -54,10 +83,10 @@ export const Experience = () => (
           <List>
             <li>Hire and train</li>
             <li>
-              <Mark>Supervise architectural decisions</Mark>
+              <Mark>Supervise Frontend architectural decisions</Mark>
             </li>
-            <li>Improve technical standards</li>
-            <li>Foster technological innovation</li>
+            <li>Improve the Frontend technical standards</li>
+            <li>Foster technological innovation in the Frontend team</li>
           </List>
         </Paragraph>
         <Paragraph>

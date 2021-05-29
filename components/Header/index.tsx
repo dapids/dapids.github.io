@@ -51,7 +51,14 @@ export const Header = () => {
     <Container align="center" as="header" direction={direction} justify="space-between">
       <Flex align={leftAlign}>
         <Display as="h1"> David Sorrentino</Display>
-        <HeadingSmall as="h2">Frontend Architect &amp; Tech Lead</HeadingSmall>
+        <HeadingSmall as="h2">Head of Software Engineering @ {' '}
+          <HeadingSmall as="span" weight="500">
+            <Link href="//www.prontopro.it" target="_blank">
+              ProntoPro
+            </Link>
+          </HeadingSmall>
+        </HeadingSmall>
+        <Body>Dreamer, hugger, karma-believer</Body>
       </Flex>
 
       <Flex align={rightAlign}>
@@ -86,15 +93,6 @@ export const Header = () => {
         </div>
 
         <Body>Current location: Rome - Italy</Body>
-
-        <div>
-          <Body as="span">Current company:</Body>{' '}
-          <Body as="span" weight="500">
-            <Link href="//www.prontopro.it" target="_blank">
-              ProntoPro
-            </Link>
-          </Body>
-        </div>
       </Flex>
     </Container>
   )

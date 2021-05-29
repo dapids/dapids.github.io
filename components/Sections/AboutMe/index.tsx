@@ -47,14 +47,13 @@ export const AboutMe = () => {
         <Flex grow="1" shrink="1">
           <Paragraph>Hi! My name is David. 👋🏻</Paragraph>
           <Paragraph>
-            I'm a <Mark>Software Development</Mark> enthusiast with{' '}<Mark>{yearsOfExperience} years of experience</Mark> in the field and I'm especially passionate about TypeScript and Functional Programming.
+            I'm a <Mark>Software Engineering</Mark> enthusiast with{' '}<Mark>{yearsOfExperience} years of experience</Mark> in the field and I'm especially passionate about TypeScript and Functional Programming.
           </Paragraph>
           <Paragraph>
             I'm currently leading the super-talented Software Engineering team @ ProntoPro, building the best service marketplace in Europe.
           </Paragraph>
           <Paragraph>
-            In my life I had the chance to live in the following towns - in the following order - and I feel so lucky
-            about it: Angri 🇮🇹, Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱,
+            In my life, I lived in the following towns - in the following order: Angri 🇮🇹, Sant'Antonio Abate 🇮🇹, Urbino 🇮🇹, Camerino 🇮🇹, Reykjavik 🇮🇸, Kalisz 🇵🇱, Poznan 🇵🇱,
             Warsaw 🇵🇱, Ancona 🇮🇹, Milan 🇮🇹, Rome 🇮🇹.
           </Paragraph>
           <Paragraph>
