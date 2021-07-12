@@ -51,6 +51,29 @@ export const ArticlesAndTalks = () => (
 
     <SectionBlock
       primaryInformation={
+        <span><Icon icon={faCalendarAlt} /> 03/07/2021</span>
+      }
+      secondaryInformation={
+        <Link href="https://prontopro.engineering/blog/talent-pipeline-for-engineers" target="_blank">
+          <Icon icon={faLink} /> Link to the article
+        </Link>
+      }
+      subtitle="ProntoPro Engineering blog"
+      title="Talent pipeline for Engineers"
+    >
+      <>
+        <Paragraph>
+          How we recruit talented Engineers in ProntoPro.
+        </Paragraph>
+
+        <Link href="https://prontopro.engineering/blog/talent-pipeline-for-engineers" target="_blank">
+          <Image alt="Talent pipeline for Engineers" src="./talent-pipeline.jpg" />
+        </Link>
+      </>
+    </SectionBlock>
+
+    <SectionBlock
+      primaryInformation={
         <span><Icon icon={faCalendarAlt} /> 17/02/2021</span>
       }
       secondaryInformation={
@@ -63,7 +86,7 @@ export const ArticlesAndTalks = () => (
     >
       <>
         <Paragraph>
-          In this article I share some details about the launch of a new Growth framework for Software Engineers in ProntoPro.
+          Some details about the launch of a new Growth framework for Software Engineers in ProntoPro.
         </Paragraph>
 
         <Link href="https://prontopro.engineering/blog/software-engineer-growth-framework" target="_blank">
